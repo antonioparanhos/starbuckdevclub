@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <img src="./assets/logo.png" alt="logo starbucks" class="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2> Não é apenas Café, é um <span>Starbucks</span></h2>
+            <p><b>15 anos da Starbucks no Brasil: De grão em grão construindo um legado de boas histórias.</b> <br>
+                Desde o início, a Starbucks se propõe a ser uma empresa que se mantém fiel à sua Missão e aos seus 
+                Valores. Gerar impactos significativos nas comunidades é um compromisso, e a empresa tem investido 
+                em iniciativas que reforcem esses pilares e reafirmem para seus partners e clientes o orgulho em 
+                pertencer.
+            </p>
+
+            <button>Deixe o seu LIKE</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./assets/img1.png" alt="copa starbucks" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./assets/img-pequena1.png" class="copo-pequeno verde">
+        <img src="./assets/img-pequena2.png" class="copo-pequeno amarelo">
+        <img src="./assets/img-pequena3.png" class="copo-pequeno rosa">
+    </div>
+</body>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let img1 = document.querySelector(".starbucks")
+    let verde = document.querySelector(".verde")
+    let amarelo = document.querySelector(".amarelo")
+    let rosa = document.querySelector(".rosa")
+
+    amarelo.addEventListener("click", () => {
+        img1.src = "./assets/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+
+    verde.addEventListener("click", () => {
+        img1.src = "./assets/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+    rosa.addEventListener("click", () => {
+        img1.src = "./assets/img3.png"
+        circulo.style.background = "#FF00FF"
+    })
+
+
+</script>
+
+</html>
